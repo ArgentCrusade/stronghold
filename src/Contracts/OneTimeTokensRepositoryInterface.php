@@ -18,7 +18,7 @@ interface OneTimeTokensRepositoryInterface
     /**
      * Get the first unused token for the given user & optional operation.
      *
-     * @param int|string $userId
+     * @param int|string  $userId
      * @param string|null $operation
      *
      * @return OneTimeToken|null
@@ -28,7 +28,7 @@ interface OneTimeTokensRepositoryInterface
     /**
      * Invalidate unused tokens for the given user & optional operation.
      *
-     * @param int|string $userId
+     * @param int|string  $userId
      * @param string|null $operation
      *
      * @return mixed

@@ -4,7 +4,6 @@ namespace ArgentCrusade\Stronghold\Tests\Unit;
 
 use ArgentCrusade\Stronghold\Events\OneTimeTokenCreated;
 use ArgentCrusade\Stronghold\OneTimeToken;
-use ArgentCrusade\Stronghold\OneTimeTokensGenerator;
 use ArgentCrusade\Stronghold\Tests\Fakes\User;
 use ArgentCrusade\Stronghold\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;

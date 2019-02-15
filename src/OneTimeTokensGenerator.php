@@ -23,8 +23,8 @@ class OneTimeTokensGenerator
      * OneTimeTokensGenerator constructor.
      *
      * @param OneTimeTokensRepositoryInterface $repository
-     * @param int $min
-     * @param int $max
+     * @param int                              $min
+     * @param int                              $max
      */
     public function __construct(OneTimeTokensRepositoryInterface $repository, int $min = 1000, int $max = 9999)
     {
