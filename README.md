@@ -8,7 +8,7 @@
 
 ## Requirements
 
-This package requires PHP 7.1 or higher.
+This package requires PHP 7.2 or higher.
 
 ## Installation
 

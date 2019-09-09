@@ -7,6 +7,7 @@ use ArgentCrusade\Stronghold\Events\OneTimeTokenCreated;
 use Carbon\Carbon;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class OneTimeTokensGenerator
 {
@@ -96,7 +97,7 @@ class OneTimeTokensGenerator
         $token = $this->repository->create([
             'user_id' => $this->getUserIdentifier($user),
             'operation' => $operation,
-            'identifier' => str_random(32),
+            'identifier' => Str::random(32),
             'code' => mt_rand($this->min, $this->max),
             'payload' => $payload,
             'expires_at' => Carbon::now()->addMinutes(15),

@@ -25,7 +25,7 @@ class OneTimeTokensTest extends TestCase
 
         $result = $generator->generate($user, 'test');
         $this->assertInstanceOf(OneTimeToken::class, $result);
-        $this->assertInternalType('integer', $result->code);
+        $this->assertIsInt($result->code);
         $this->assertTrue($result->code >= $min);
         $this->assertTrue($result->code <= $max);
     }
